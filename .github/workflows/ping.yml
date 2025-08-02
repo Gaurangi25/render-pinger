@@ -8,5 +8,7 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Ping to Render
-        run: curl https://curamap.onrender.com
+      - name: Send Ping to Both Render Services
+        run: |
+          curl https://curamap.onrender.com
+          curl https://the-binge-box.onrender.com
